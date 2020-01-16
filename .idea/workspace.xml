@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a038d747-cad6-4f7c-b69f-79ea1817476e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,13 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.testingFirstRoleShouldBeTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest.testing1to100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumbers" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AppTest" />
-      <option name="METHOD_NAME" value="testingFirstRoleShouldBeTrue" />
+      <option name="METHOD_NAME" value="testing1to100" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,19 +146,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AppTest.testingFirstRoleShouldBeTrue" />
       <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
       <item itemvalue="JUnit.AppTest" />
       <item itemvalue="Kotlin.TestsKt" />
       <item itemvalue="JUnit.AppTest.testingFourthRoleShouldBeTrue" />
+      <item itemvalue="JUnit.AppTest.testing1to100" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.testing1to100" />
         <item itemvalue="JUnit.AppTest.testingFourthRoleShouldBeTrue" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest" />
-        <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
       </list>
     </recent_temporary>
   </component>

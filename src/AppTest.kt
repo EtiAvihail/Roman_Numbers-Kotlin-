@@ -5,6 +5,22 @@ import org.junit.jupiter.api.Test
 class AppTest{
 
     @Test
+    fun testing1to100() {
+
+
+        var numbers = listOf("I","XXVI","LI","LXXVI","II","XXVII","LII","LXXVII","III","XXVIII","LIII","LXXVIII","IV","XXIX","LIV", "LXXIX",
+            "V","XXX","LV","LXXX","VI","XXXI","LVI","LXXXI","VII","XXXII","LVII","LXXXII","VIII","XXXIII","LVIII","LXXXIII",
+            "IX","XXXIV","LIX","LXXXIV","X","XXXV","LX","LXXXV","XI","XXXVI", "LXI", "LXXXVI", "XII", "XXXVII", "LXII", "LXXXVII",
+            "XIII","XXXVIII","LXIII","LXXXVIII","XIV","XXXIX",	"LXIV",	"LXXXIX","XV","XL","LXV","XC", "XVI","XLI","LXVI","XCI","XVII","XLII","LXVII","XCII",
+            "XVIII","XLIII","LXVIII","XCIII",	"XIX","XLIV","LXIX","XCIV","XX","XLV", "LXX","XCV","XXI","XLVI","LXXI","XCVI", "XXII","XLVII","LXXII","XCVII",
+            "XXIII","XLVIII","LXXIII","XCVIII","XXIV","XLIX","LXXIV","XCIX","XXV","L", "LXXV", "C")
+
+        for(i in 0 until numbers.size){
+            assertEquals(true, isRomanNumber(numbers[i]))
+        }
+    }
+
+    @Test
     fun testingIllegalCharsShouldBeFalse() {
 
         assertEquals(false, isRomanNumber("VLaX"))
@@ -13,25 +29,9 @@ class AppTest{
     }
 
     @Test
-    fun testingFirstRoleShouldBeTrue() {
-
-        assertEquals(true, isRomanNumber("XXII"))
-    }
-
-    @Test
     fun testingFirstRoleShouldBeFalse() {
 
         assertEquals(false, isRomanNumber("IIXX"))
-    }
-
-    @Test
-    fun testingSecondRoleShouldBeTrue() {
-
-        assertEquals(true, isRomanNumber("III"))
-        //test when in the middle\end of the string
-        assertEquals(true, isRomanNumber("XIII"))
-        assertEquals(true, isRomanNumber("LXXXI"))
-
     }
     @Test
     fun testingSecondRoleShouldBeFalse() {
@@ -43,14 +43,6 @@ class AppTest{
     }
 
     @Test
-    fun testingThirdRoleShouldBeTrue() {
-
-        assertEquals(true, isRomanNumber("L"))
-        //this also tests fourth role
-        assertEquals(true, isRomanNumber("IV"))
-        assertEquals(true, isRomanNumber("VI"))
-    }
-    @Test
     fun testingThirdRoleShouldBeFalse() {
 
         assertEquals(false, isRomanNumber("LL"))
@@ -59,14 +51,6 @@ class AppTest{
         assertEquals(false, isRomanNumber("LLI"))
     }
 
-    @Test
-    fun testingFourthRoleShouldBeTrue() {
-
-        assertEquals(true, isRomanNumber("IV"))
-        assertEquals(true, isRomanNumber("XIV"))
-        assertEquals(true, isRomanNumber("XCIX"))
-
-    }
     @Test
     fun testingFourthRoleShouldBeFalse() {
 
