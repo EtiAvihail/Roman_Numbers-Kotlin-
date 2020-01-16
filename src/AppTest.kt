@@ -7,7 +7,7 @@ class AppTest{
     @Test
     fun testingIllegalCharsShouldBeFalse() {
 
-        assertEquals(false, isRomanNumber("a"))
+        assertEquals(false, isRomanNumber("VLאזא"))
         assertEquals(false, isRomanNumber("XXAX"))
 
     }

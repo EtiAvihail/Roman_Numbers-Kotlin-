@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a038d747-cad6-4f7c-b69f-79ea1817476e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/AppTest.class" afterDir="false" />
@@ -93,6 +92,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppTest" />
+      <option name="METHOD_NAME" value="testingFourthRoleShouldBeFalse" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppTest.testingFirstRoleShouldBeTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -137,9 +147,9 @@
       <list>
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
         <item itemvalue="Kotlin.TestsKt" />
-        <item itemvalue="JUnit.AppTest.testingFirstRoleShouldBeTrue" />
       </list>
     </recent_temporary>
   </component>
