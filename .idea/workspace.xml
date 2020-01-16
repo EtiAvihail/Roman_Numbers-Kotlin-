@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a038d747-cad6-4f7c-b69f-79ea1817476e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AppTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/AppKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/META-INF/RomanNumbers.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/META-INF/RomanNumbers.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/TestsKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RomanNumbers/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RomanNumbers/AppTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppTest.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,9 +33,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/junit-jupiter-api-5.2.0.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/jar_files/junit5-1.26.124.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -61,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.testingSecondRoleShouldBeFalse">
+  <component name="RunManager" selected="JUnit.AppTest">
     <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="RomanNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -73,12 +71,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppTest.roman" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumbers" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AppTest" />
-      <option name="METHOD_NAME" value="roman" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="testingIllegalCharsShouldBeFalse" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppTest" />
+      <option name="METHOD_NAME" value="testingFourthRoleShouldBeFalse" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,17 +129,17 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AppTest.testingFirstRoleShouldBeTrue" />
-      <item itemvalue="JUnit.AppTest.roman" />
-      <item itemvalue="Kotlin.TestsKt" />
       <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
+      <item itemvalue="JUnit.AppTest" />
+      <item itemvalue="Kotlin.TestsKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
         <item itemvalue="Kotlin.TestsKt" />
         <item itemvalue="JUnit.AppTest.testingFirstRoleShouldBeTrue" />
-        <item itemvalue="JUnit.AppTest.roman" />
-        <item itemvalue="JUnit.AppTest" />
       </list>
     </recent_temporary>
   </component>

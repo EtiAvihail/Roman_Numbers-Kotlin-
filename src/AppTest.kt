@@ -2,7 +2,7 @@ import App.isRomanNumber
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
-internal class AppTest{
+class AppTest{
 
     @Test
     fun testingIllegalCharsShouldBeFalse() {
@@ -70,10 +70,10 @@ internal class AppTest{
     @Test
     fun testingFourthRoleShouldBeFalse() {
 
-        assertEquals(false, isRomanNumber("IV"))
-        assertEquals(false, isRomanNumber("XIV"))
-        assertEquals(false, isRomanNumber("XCIX"))
-        assertEquals(false, isRomanNumber("VXL"))
+        assertEquals(false, isRomanNumber("IIV"))
+        assertEquals(false, isRomanNumber("XIIV"))
+        assertEquals(false, isRomanNumber("XXC"))
+        assertEquals(false, isRomanNumber("XIXXL"))
     }
 
 }

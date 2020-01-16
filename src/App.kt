@@ -35,7 +35,8 @@ object App {
 
         if(index == 0) return true
         if(charRepeats(str, index)) return false
-        if(index < str.length - 1 && legalChars[str[index]]!! < legalChars[str[index + 1]]!!){
+        if(index < str.length - 1 && legalChars.containsKey(str[index+1])
+                    && legalChars[str[index]]!! < legalChars[str[index + 1]]!!){
             when(str[index]){
                 'I' -> if(str[index - 1] == 'I') return false
                 'X' -> if(str[index - 1] == 'I' || str[index - 1] == 'X') return false
