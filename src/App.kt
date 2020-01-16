@@ -1,40 +1,59 @@
+val legalChars: HashMap<Char, Int> = createMap()
+
 fun isRomanNumber(str: String): Boolean {
-
-    val legalChars : HashMap<Char,Int>  = createMap()
-
 
     for (i in 0 until (str.length - 1)) {
 
         if (!legalChars.contains(str[i])) return false
-
-        when (str[i]) {
-
-            'I' -> if (charRepeats(str, 'I', i)) return false
-            'X' -> if (charRepeats(str, 'X', i)) return false
-            'C' -> if (charRepeats(str, 'C', i)) return false
-            'V' -> if (i < str.length - 1 && str[i] == 'V') return false
-            'L' -> if (i < str.length - 1 && str[i] == 'L') return false
-        }
-        //TODO handle condition 4
-
+        if (!legalRepeats(str, i)) return false
+        if (!singleLesser(str, i)) return false
     }
 
     return true
 }
 
-fun createMap() : HashMap<Char, Int>{
+fun createMap(): HashMap<Char, Int> {
 
-        val map : HashMap<Char, Int> = HashMap<Char, Int>()
-        map['I'] = 1;
-        map['X'] = 10;
-        map['C'] = 100;
-        map['V'] = 5;
-        map['I'] = 50;
+    val map: HashMap<Char, Int> = HashMap<Char, Int>()
+    map['I'] = 1;
+    map['X'] = 10;
+    map['C'] = 100;
+    map['V'] = 5;
+    map['L'] = 50;
+
+    return map
+}
+
+fun legalRepeats(str: String, index: Int): Boolean {
+
+    when (str[index]) {
+
+        'I' -> if (charRepeats(str, 'I', index)) return false
+        'X' -> if (charRepeats(str, 'X', index)) return false
+        'C' -> if (charRepeats(str, 'C', index)) return false
+        'V' -> if (index < str.length - 1 && str[index] == 'V') return false
+        'L' -> if (index < str.length - 1 && str[index] == 'L') return false
+    }
+
+    return true
 
 }
 
 fun charRepeats(str: String, c: Char, startIndex: Int): Boolean {
 
-    return (startIndex < str.length - 2 && str[startIndex + 1] == c && str[startIndex + 2] == c)
+    return (startIndex < str.length - 3 && str[startIndex + 1] == c && str[startIndex + 2] == c)
+}
+
+fun singleLesser(str: String, index: Int): Boolean {
+
+    if (index == 0 || index == str.length) return true
+    else {
+
+        if ((legalChars[str[index - 1]]!! <= legalChars[str[index]]!!) && (legalChars[str[index]]!! <= legalChars[str[index + 1]]!!)) {
+            return false
+        }
+    }
+
+    return true
 }
 

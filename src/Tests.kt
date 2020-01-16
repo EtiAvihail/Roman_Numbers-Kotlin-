@@ -1,3 +1,3 @@
 fun main(args: Array<String>) : Unit{
-    print(isRomanNumber("XVV"))
+    print(isRomanNumber("L"))
 }
