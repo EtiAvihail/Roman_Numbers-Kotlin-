@@ -20,6 +20,7 @@
         <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -114,6 +115,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppTest.testingFourthRoleShouldBeTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RomanNumbers" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AppTest" />
+      <option name="METHOD_NAME" value="testingFourthRoleShouldBeTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppTest.testingSecondRoleShouldBeFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RomanNumbers" />
       <option name="PACKAGE_NAME" value="" />
@@ -142,14 +153,15 @@
       <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
       <item itemvalue="JUnit.AppTest" />
       <item itemvalue="Kotlin.TestsKt" />
+      <item itemvalue="JUnit.AppTest.testingFourthRoleShouldBeTrue" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="JUnit.AppTest.testingFourthRoleShouldBeTrue" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest" />
         <item itemvalue="JUnit.AppTest.testingSecondRoleShouldBeFalse" />
-        <item itemvalue="Kotlin.TestsKt" />
       </list>
     </recent_temporary>
   </component>

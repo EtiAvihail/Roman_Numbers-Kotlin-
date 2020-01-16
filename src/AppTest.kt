@@ -7,7 +7,7 @@ class AppTest{
     @Test
     fun testingIllegalCharsShouldBeFalse() {
 
-        assertEquals(false, isRomanNumber("VLאזא"))
+        assertEquals(false, isRomanNumber("VLaX"))
         assertEquals(false, isRomanNumber("XXAX"))
 
     }
@@ -65,7 +65,7 @@ class AppTest{
         assertEquals(true, isRomanNumber("IV"))
         assertEquals(true, isRomanNumber("XIV"))
         assertEquals(true, isRomanNumber("XCIX"))
-        assertEquals(true, isRomanNumber("VXL"))
+
     }
     @Test
     fun testingFourthRoleShouldBeFalse() {
@@ -74,6 +74,8 @@ class AppTest{
         assertEquals(false, isRomanNumber("XIIV"))
         assertEquals(false, isRomanNumber("XXC"))
         assertEquals(false, isRomanNumber("XIXXL"))
+        assertEquals(false, isRomanNumber("VXL"))
+
     }
 
 }
