@@ -1,59 +1,56 @@
-val legalChars: HashMap<Char, Int> = createMap()
+object App {
 
-fun isRomanNumber(str: String): Boolean {
+    private val legalChars: HashMap<Char, Int> = createMap()
 
-    for (i in 0 until (str.length - 1)) {
+    fun isRomanNumber(str: String): Boolean {
 
-        if (!legalChars.contains(str[i])) return false
-        if (!legalRepeats(str, i)) return false
-        if (!singleLesser(str, i)) return false
-    }
+        for (i in 0 until str.length) {
 
-    return true
-}
+            if (!legalChars.contains(str[i])) return false
 
-fun createMap(): HashMap<Char, Int> {
+            when(str[i]){
 
-    val map: HashMap<Char, Int> = HashMap<Char, Int>()
-    map['I'] = 1;
-    map['X'] = 10;
-    map['C'] = 100;
-    map['V'] = 5;
-    map['L'] = 50;
+                'I', 'X', 'C' -> if(!checkIXC(str, i)) return false
+                'V', 'L' ->  if (i > 0 && str[i] == str[i - 1]) return false
 
-    return map
-}
-
-fun legalRepeats(str: String, index: Int): Boolean {
-
-    when (str[index]) {
-
-        'I' -> if (charRepeats(str, 'I', index)) return false
-        'X' -> if (charRepeats(str, 'X', index)) return false
-        'C' -> if (charRepeats(str, 'C', index)) return false
-        'V' -> if (index < str.length - 1 && str[index] == 'V') return false
-        'L' -> if (index < str.length - 1 && str[index] == 'L') return false
-    }
-
-    return true
-
-}
-
-fun charRepeats(str: String, c: Char, startIndex: Int): Boolean {
-
-    return (startIndex < str.length - 3 && str[startIndex + 1] == c && str[startIndex + 2] == c)
-}
-
-fun singleLesser(str: String, index: Int): Boolean {
-
-    if (index == 0 || index == str.length) return true
-    else {
-
-        if ((legalChars[str[index - 1]]!! <= legalChars[str[index]]!!) && (legalChars[str[index]]!! <= legalChars[str[index + 1]]!!)) {
-            return false
+            }
         }
+
+        return true
     }
 
-    return true
-}
+    private fun createMap(): HashMap<Char, Int> {
 
+        val map: HashMap<Char, Int> = HashMap<Char, Int>()
+        map['I'] = 1;
+        map['X'] = 10;
+        map['C'] = 100;
+        map['V'] = 5;
+        map['L'] = 50;
+
+        return map
+    }
+
+    private fun checkIXC(str : String, index : Int) : Boolean{
+
+        if(index == 0) return true
+        if(charRepeats(str, index)) return false
+        if(index < str.length - 1 && legalChars[str[index]]!! < legalChars[str[index + 1]]!!){
+            when(str[index]){
+                'I' -> if(str[index - 1] == 'I') return false
+                'X' -> if(str[index - 1] == 'I' || str[index - 1] == 'X') return false
+            }
+        }
+
+        return true
+    }
+
+    private fun charRepeats(str: String, index: Int): Boolean {
+
+        var c : Char = str[index]
+
+        return (index > 2  && str[index - 1] == c && str[index - 2] == c && str[index - 3] == c)
+
+    }
+
+}
